@@ -1,21 +1,16 @@
 # Calculator App TODOs
 
 ## Setup & Planning
-- [x] Define project plan and requirements
-- [x] Add Grok's project plan to context files
-- [ ] Create step-by-step TODO list
+ - [x] Start local development server (`npm run dev`)
 
-## Initial Project Structure
-- [ ] Set up main calculator component in `src/app`
-- [ ] Create UI layout: display area, button grid
-- [ ] Add Tailwind CSS classes for styling
+- [x] Add Tailwind CSS classes for styling
 
 ## Core Functionality
-- [ ] Implement number and operator button logic
-- [ ] Handle input and display updates
-- [ ] Implement calculation logic (add, subtract, multiply, divide)
-- [ ] Add clear/reset functionality
-- [ ] Add equals button to compute result
+- [x] Implement number and operator button logic
+- [x] Handle input and display updates
+- [x] Implement calculation logic (add, subtract, multiply, divide)
+- [x] Add clear/reset functionality
+- [x] Add equals button to compute result
 
 ## Error Handling & Edge Cases
 - [ ] Prevent multiple consecutive operators

@@ -1,3 +1,35 @@
+# Technical Overview
+
+This project is a modern calculator app built with:
+
+- **Next.js (App Router)**: For component-based structure and routing.
+- **TypeScript**: Type safety for all logic and UI components.
+- **Tailwind CSS v4**: Utility-first styling, design tokens, and layered CSS imports.
+- **CSS Modules**: Local styles for components, referencing global design tokens.
+- **Design Tokens**: Defined in `globals.css` under `@layer theme { :root { ... } }` for theme consistency and dark mode support.
+- **Error Handling**: Prevents multiple consecutive operators, multiple decimals, and division by zero, displaying user-friendly error messages.
+- **Responsive Design**: Mobile-first layout, tested on desktop and mobile, with adaptive spacing and font sizes.
+- **Accessibility**: Keyboard navigation and ARIA labels (see TODO.md for checklist).
+
+## Integration Details
+
+- Tailwind v4 is integrated using layered imports in `globals.css`:
+	- `@import "tailwindcss/theme.css" layer(theme);`
+	- `@import "tailwindcss/preflight.css" layer(base);`
+	- `@import "tailwindcss/utilities.css" layer(utilities);`
+- All design tokens and theme variables are defined in `@layer theme { :root { ... } }`.
+- CSS modules (e.g., `Calculator.module.css`) use only local class selectors and reference global variables.
+- Lint warnings for unknown at-rules (e.g., `@theme`, `@layer`) can be ignored or suppressed in Stylelint config.
+
+## Workflow
+
+- See `TODO.md` for step-by-step progress tracking and portfolio asset preparation.
+- See `CLAUDE.md` for Tailwind v4 integration guide and troubleshooting.
+
+## Deployment
+
+- Ready for deployment to Vercel or similar platforms.
+- Portfolio assets and screenshots should follow the naming and sizing conventions in `TODO.md`.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
